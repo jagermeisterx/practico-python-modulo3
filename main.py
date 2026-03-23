@@ -89,3 +89,19 @@ Crea un programa que pida un número al usuario un número de mes (por ejemplo, 
 y el nombre del mes. Debes usar listas. Para simplificarlo vamos  a suponer que febrero tiene 28 días.  
 
 """
+nombres_meses = [
+    "Enero", "Febrero", "Marzo",     "Abril",   "Mayo",      "Junio",
+    "Julio", "Agosto",  "Septiembre","Octubre",  "Noviembre", "Diciembre"
+]
+dias_meses = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+while True:
+    try:
+        indice=int(input("Ingrese número del mes deseado: "))
+        if(indice<=12 and indice>=1):
+            indice = indice - 1
+            print(f"El número ingresado corresponde a {nombres_meses[indice]}, y ese mes tiene {dias_meses[indice]} días.")
+            break
+        else:
+            print("Nota fuera del rango. ")
+    except ValueError:
+        print("Eso no es un número, intente de nuevo. ")
