@@ -26,7 +26,6 @@ def imprimir_lista(numero_ingresado):
             else:
                 if(numero_ingresado==p):
                     numero_encontrado=True
-                    #lista_final.append(p)
         print(f"En número ingresado fue {numero_ingresado}, los pares siguentes son: ")
         if(len(lista_final)==0):
             print("No quedan más pares siguientes")
@@ -40,7 +39,6 @@ def imprimir_lista(numero_ingresado):
             else:
                 if(numero_ingresado==p):
                     numero_encontrado=True
-                    #lista_final.append(p)
         print(f"En número ingresado fue {numero_ingresado}, los impares siguentes son: ")
         if(len(lista_final)==0):
             print("No quedan más impares siguientes")
@@ -77,7 +75,7 @@ for i in range(1,6):
                 break
         except ValueError:
             print("Error, ingrese un número. ")
-promedio = sum(notas)/len(notas)
+promedio = sum(notas)/len(notas)    #aqui hago la suma de la lista dividido en la cantidad de elementos en ella 
 nota_minima=min(notas)
 nota_max=max(notas)
 
